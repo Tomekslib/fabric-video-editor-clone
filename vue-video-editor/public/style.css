@@ -1,0 +1,58 @@
+/* Global styles for the video editor */
+:root {
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --bg-dark: #1e293b;
+  --bg-darker: #0f172a;
+  --text-light: #f8fafc;
+}
+
+/* Timeline styles */
+.timeline-container {
+  position: relative;
+  overflow: visible !important;
+  z-index: 1;
+}
+
+.timeline-item {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Video preview */
+.video-preview {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Drag handles */
+.drag-handle {
+  width: 8px;
+  height: 100%;
+  cursor: ew-resize;
+  position: absolute;
+  z-index: 2;
+}
+
+.drag-handle.left {
+  left: 0;
+}
+
+.drag-handle.right {
+  right: 0;
+}
+
+/* Utility classes */
+.hidden {
+  display: none !important;
+}
+
+.cursor-ew-resize {
+  cursor: ew-resize;
+}
+
+.cursor-move {
+  cursor: move;
+}
